@@ -12,7 +12,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: relative;
     height: 100%;
 }
 .navBar{
@@ -32,17 +31,7 @@
     color: white;
     font-size: 2rem;
     cursor: pointer;
-
 }
-.nav-items{
-    /* display: block; */
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 86;
-    width: 100%;
-}
-
 .menu-button{
     margin-top: 10px;
     display: flex;
@@ -57,7 +46,6 @@
 .menu-toggle{
     position: relative;
     display: none;
-    
 }
 .toggle{
     position: absolute;
@@ -68,14 +56,18 @@
     top: 90;
     right: 0;
     padding: 0px;
-    transition: all 0.7s ease;
+    animation-name: example;
+}
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    50%  {left:200px; top:200px;}
+    100% {left:0px; top:0px;}
 }
 .toggle li{
     list-style: none;
     display: block;
     padding: 20px 0;
-    color: #fafafa
-    
+    color: #fafafa;
 }
 .toggle li:hover{
     background-color:#000;
@@ -274,4 +266,64 @@ i{
 }
 .footer p{
     font-size: 16px;
+}
+
+@media all and (min-width: 600px){
+    .art-servicios{
+        padding: 50px;
+    }
+    .dest-articles{
+        padding: 50px;
+    }
+    .contact{
+        padding: 50px;
+    }
+}
+@media all and (min-width: 768px){
+    
+    .art-servicios{
+        padding: 20px;
+    }
+    
+    .art{
+        display: flex;
+        justify-content: center;
+    }
+    .art img{
+        width: 40%;
+    }
+    .art-text{
+        margin-left: 30px;
+    }
+    .middle{
+        padding: 150px;
+    }
+    .dest-articles{
+        padding: 0px;
+        flex-direction: row;
+        gap: 50px;
+    }
+    .art-item {
+        width: 30%;
+    }
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .about, .links, .datos{
+        width: 30%;
+    }
+    .links{
+        text-align: center;
+    }
+}
+@media all and (min-width: 900px){
+    .principal-Text{
+        margin-top: 200px;
+    }
+    .main{
+        padding:150px;
+        background-size: 40%;
+        background-position: 50px center;
+    }
 }
