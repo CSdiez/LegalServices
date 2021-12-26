@@ -12,6 +12,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    position: relative;
     height: 100%;
 }
 .navBar{
