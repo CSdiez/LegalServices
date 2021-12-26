@@ -7,12 +7,12 @@
     font-family: 'Jost', sans-serif;
 }
 .header{
-    background-image: url(assets/WEB.png);
+    background-image: url(assets/web.png);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-attachment: fixed;
+    height: 100%;
 }
 .navBar{
     display: flex;
@@ -56,6 +56,7 @@
 .menu-toggle{
     position: relative;
     display: none;
+    
 }
 .toggle{
     position: absolute;
@@ -66,13 +67,14 @@
     top: 90;
     right: 0;
     padding: 0px;
-
+    transition: all 0.7s ease;
 }
 .toggle li{
     list-style: none;
     display: block;
     padding: 20px 0;
     color: #fafafa
+    
 }
 .toggle li:hover{
     background-color:#000;
@@ -87,6 +89,7 @@
 }
 .menu-toggle:checked + .toggle{
     display: block;
+    transition: all 0.7s ease;
 }
 input[type=checkbox] {
 	visibility: hidden;
@@ -173,6 +176,7 @@ input[type=checkbox] {
     color: white;
     padding: 20px;
     text-align: center;
+    text-shadow: 0 0px 10px black;
 }
 .middle h2{
     margin-bottom: 20px;
