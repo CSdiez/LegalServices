@@ -142,8 +142,8 @@ input[type=checkbox] {
     flex-direction: column;
     align-items: center;
 }
-.art-servicios{
-    margin-top: 20px;
+.servicios h2{
+    margin:30px 0px 50px;
 }
 
 .art img{
@@ -179,7 +179,7 @@ input[type=checkbox] {
     text-align: center;
 }
 .dest h2{
-    margin-bottom: 30px;
+    margin:20px 0px 50px;
 }
 .dest-articles{
     display: flex;
@@ -269,6 +269,7 @@ i{
 }
 
 @media all and (min-width: 600px){
+    
     .art-servicios{
         padding: 50px;
     }
@@ -283,28 +284,31 @@ i{
     
     .art-servicios{
         padding: 20px;
+        justify-content: center;
     }
-    
     .art{
         display: flex;
         justify-content: center;
+        align-self: center;
     }
     .art img{
-        width: 40%;
+        width: 30%;
     }
     .art-text{
+        width: 50%;
+        margin-top: 50px;
         margin-left: 30px;
     }
     .middle{
         padding: 150px;
     }
     .dest-articles{
-        padding: 0px;
+        padding: 40px;
         flex-direction: row;
         gap: 50px;
     }
     .art-item {
-        width: 30%;
+        width: 40%;
     }
     .footer-container{
         display: flex;
@@ -322,8 +326,20 @@ i{
         margin-top: 200px;
     }
     .main{
-        padding:150px;
-        background-size: 40%;
-        background-position: 50px center;
+        padding:80px;
+        background-size: 30%;
+        background-position: 150px center;
+        display: flex;
+        align-items: flex-end;
+    }
+    .art-item{
+        width: 20%;
+    }
+    .dest-articles{
+        gap: 100px;
+    }
+    .main-text{
+        margin-right: 80px;
+        width: 45%;
     }
 }
